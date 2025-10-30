@@ -16,9 +16,18 @@ Unordered MultiSet -> can store duplicates.
 **unordered map** Unique Keys. Not sorted. uses hashing. stored in Buckets. 
 **unordered multimap** allows duplicates. 
 
-**vector** Dynamic Array or ArrayList. std::vector<int> arr; 
+**vector** Dynamic Array or ArrayList. std::vector<int> arr; It is a linkedlist + array.
         Size can grow/Shrink dynamically. Size doubles once it is full. 
         In C, we use arrays for faster access and when size is known. If size is unknown we use LinkedList. 
    **Element access** -> at(), at() is exception for out of bound access, [], front() -> arr.front() is first element in array, back() -> last element, data() -> pointer of the array, 
    **Modifiers** -> arr.push_back(10), pop_back(), insert(), emplace(), emplace_back(), resize(), swap(), erase(), clear().
+   vector.reserve(1000). to allocate tentative size. to avoid copying to new location to increase size.
+    vector.resize(10). changes size.
+    
+   Vector<vector<int>> Tree; vector inside a vector.
+
+**forward list** - single Linked list. forward_list<int> list1; list1.insert_after(list1.begin(), 8);
+   assign, front, empty, clear, unique, remove, remove_if, reverse, sort, merge, max_size, insert_after, emplace_after, resize
+   merge without sort is concatenation. splice_after(), 
+  **list** double linked list. 
 
